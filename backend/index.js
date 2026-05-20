@@ -1,5 +1,8 @@
-// Load secret keys from .env
-require('dotenv').config();
+// On Railway (production), env vars come from Railway dashboard directly.
+// Locally, load them from .env file.
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 const express = require('express');
 const cors = require('cors');
