@@ -10,7 +10,7 @@ const app = express();
 // Allow requests only from known frontend origins
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://tour-package-manager-joyaltitus.vercel.app',
+  'https://tour-package-manager.vercel.app',
 ];
 
 app.use(cors({
