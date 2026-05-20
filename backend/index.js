@@ -88,4 +88,5 @@ app.delete('/packages/:id', async (req, res) => {
 // Start the server
 app.listen(PORT, () => {
   console.log(`Backend running on port ${PORT}`);
+  console.log(`SUPABASE_URL loaded: ${process.env.SUPABASE_URL ? 'YES' : 'NO'}`);
 });
