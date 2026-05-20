@@ -30,9 +30,9 @@ Non-technical learner. I understand concepts but cannot debug code alone. Always
 10. End each step with: "Test this by doing X. Tell me what you see."
 
 ## Current status
-Part 3 complete. React frontend running on port 5173.
-Public page shows tour packages fetched live from backend.
-Components: PackageCard. Pages: Home. App.jsx connected.
+Part 4 complete. Full app working locally.
+Admin panel, login, CRUD all tested and passing.
+Code pushed to GitHub: https://github.com/joyaltitus/tour-package-manager
 
 ## Start backend command
 ```
@@ -45,8 +45,7 @@ cd "/Users/joyaltitus/Documents/Claude VS code/tour-package-manager/frontend" &&
 ```
 
 ## Next step
-Part 4: Admin panel. Login + protected dashboard + full CRUD UI.
-Auth via Supabase Auth. React Router for navigation between pages.
+Part 5: Deploy backend to Railway, frontend to Vercel.
 
 ## Rules I follow
 - Test every step before moving on

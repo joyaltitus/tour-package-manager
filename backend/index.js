@@ -6,7 +6,24 @@ const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
 
 const app = express();
-app.use(cors());
+
+// Allow requests only from known frontend origins
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://tour-package-manager-joyaltitus.vercel.app',
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow server-to-server requests (no origin) and listed origins
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
+
 app.use(express.json());
 
 // Connect to Supabase using keys from .env
