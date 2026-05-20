@@ -14,6 +14,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'https://tour-package-manager.vercel.app',
+  'https://tour-package-manager-j21f9gw2o-joyaltitus-projects.vercel.app',
 ];
 
 app.use(cors({

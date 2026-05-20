@@ -30,22 +30,30 @@ Non-technical learner. I understand concepts but cannot debug code alone. Always
 10. End each step with: "Test this by doing X. Tell me what you see."
 
 ## Current status
-Part 4 complete. Full app working locally.
-Admin panel, login, CRUD all tested and passing.
-Code pushed to GitHub: https://github.com/joyaltitus/tour-package-manager
+Part 5 deployment in progress.
+Backend: live on Render at https://tour-package-manager.onrender.com
+Frontend: live on Vercel at https://tour-package-manager.vercel.app
+Packages JSON confirmed working at /packages endpoint.
+CORS fix applied — Vercel preview URL added to allowedOrigins.
+Next: confirm frontend loads packages, then test full flow.
 
-## Start backend command
+## Live URLs
+- Backend (Render): https://tour-package-manager.onrender.com
+- Frontend (Vercel): https://tour-package-manager.vercel.app
+- GitHub: https://github.com/joyaltitus/tour-package-manager
+
+## Start backend command (local)
 ```
 cd "/Users/joyaltitus/Documents/Claude VS code/tour-package-manager/backend" && NODE_OPTIONS="" node index.js
 ```
 
-## Start frontend command
+## Start frontend command (local)
 ```
 cd "/Users/joyaltitus/Documents/Claude VS code/tour-package-manager/frontend" && npm run dev
 ```
 
 ## Next step
-Part 5: Deploy backend to Railway, frontend to Vercel.
+Confirm frontend loads packages from Render. Test full flow: public page → admin login → add/edit/delete → logout.
 
 ## Rules I follow
 - Test every step before moving on
